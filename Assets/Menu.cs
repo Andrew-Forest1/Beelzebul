@@ -20,4 +20,34 @@ public class Menu : MonoBehaviour
 			menu.SetActive(!menu.activeSelf);
 		}
     }
+
+	public void Resume()
+	{
+		menu.SetActive(!menu.activeSelf);
+	}
+
+	public void Character()
+	{
+		Debug.Log("Character");
+	}
+
+	public void Attributes()
+	{
+		Debug.Log("Attributes");
+	}
+
+	public void Abilities()
+	{
+		Debug.Log("Abilities");
+	}
+
+	public void Settings()
+	{
+		Debug.Log("Settings");
+	}
+
+	public void Exit()
+	{
+		Debug.Log("Exit");
+	}
 }
