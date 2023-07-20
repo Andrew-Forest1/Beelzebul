@@ -6,6 +6,7 @@ public class Menu : MonoBehaviour
 {
 	// Start is called before the first frame update
 	public GameObject menu;
+	public GameObject abilitiesPage;
 
     void Start()
     {
@@ -33,12 +34,14 @@ public class Menu : MonoBehaviour
 
 	public void Attributes()
 	{
-		Debug.Log("Attributes");
+		abilitiesPage.SetActive(true);
+		menu.SetActive(false);
 	}
 
 	public void Abilities()
 	{
-		Debug.Log("Abilities");
+		abilitiesPage.SetActive(true);
+		menu.SetActive(false);
 	}
 
 	public void Settings()
