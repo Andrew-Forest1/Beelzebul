@@ -7,10 +7,12 @@ public class AbilityDragDrop : MonoBehaviour
 	private Transform dragIcon;
 	private bool isDragging = false;
 	private Vector3 offset;
+	private ActionBarController actionBarController;
 
 	private void Start()
 	{
 		dragIcon = transform.GetChild(0);
+		actionBarController = GameObject.Find("Action Bar").GetComponent<ActionBarController>();
 	}
 
 	private void Update()
@@ -61,6 +63,7 @@ public class AbilityDragDrop : MonoBehaviour
 		// Set the dragging flag to false
 		isDragging = false;
 		dragIcon.position = transform.position;
+		actionBarController.OnDropIcon(transform.gameObject);
 	}
 
 	private Vector3 GetMouseWorldPosition()
