@@ -8,6 +8,7 @@ public class AbilityDragDrop : MonoBehaviour
 	private bool isDragging = false;
 	private Vector3 offset;
 	private ActionBarController actionBarController;
+	public GameObject ability;
 
 	private void Start()
 	{
@@ -61,9 +62,12 @@ public class AbilityDragDrop : MonoBehaviour
 	private void OnMouseUp()
 	{
 		// Set the dragging flag to false
-		isDragging = false;
-		dragIcon.position = transform.position;
-		actionBarController.OnDropIcon(transform.gameObject);
+		if (isDragging)
+		{
+			isDragging = false;
+			dragIcon.position = transform.position;
+			actionBarController.OnDropIcon(ability);
+		}
 	}
 
 	private Vector3 GetMouseWorldPosition()
