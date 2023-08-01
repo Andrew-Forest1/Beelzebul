@@ -2608,6 +2608,7 @@ Transform:
   - {fileID: 1354887516}
   - {fileID: 142942389}
   - {fileID: 1592671636364452356}
+  - {fileID: 7146341461943625403}
   - {fileID: 1016175156}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2697,9 +2698,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilities:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 142942388}
+  - {fileID: 6692541544970109321}
+  - {fileID: 5998681809802033872}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2906,7 +2907,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 991886068}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1016175157
 SpriteRenderer:
@@ -5942,7 +5943,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968636393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.011111111, y: 0.011111111, z: 0.011111111}
   m_Children:
   - {fileID: 521574820}
@@ -6129,7 +6130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008937085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1000, y: 1000, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6448,6 +6449,42 @@ PrefabInstance:
       objectReference: {fileID: 1516798742}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fbfab1b185a29640b5d3e40ccac060e, type: 3}
+--- !u!114 &5659783161247977970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5998681809802033872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2ded0798da76d45bb7c234507af90c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ready: 1
+  manaCost: 0
+  cdTime: 10
+  damage: 10
+  icon: {fileID: 21300000, guid: ce78dcf5506ebd140b8211e73eae7ebe, type: 3}
+  prefab: {fileID: 2372448816873898980, guid: b4dc936b143e0ee4697493cfd12b4c87, type: 3}
+  gameTimeAtActivation: 0
+--- !u!1 &5998681809802033872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7146341461943625403}
+  - component: {fileID: 5659783161247977970}
+  m_Layer: 0
+  m_Name: FlameStrike-Ability
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &6692541544970109321
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,6 +6502,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &7146341461943625403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5998681809802033872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 991886068}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7718509355685002227
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -66,6 +66,21 @@ public class AbilityController : MonoBehaviour
 				Debug.Log("No Ability Selected");
 			}
 		}
+
+		if (abilities[2])
+		{
+			if (Input.GetKeyDown(KeyCode.Alpha3) && abilitiesParams[2].ready)
+			{
+				abilitiesParams[2].Activate();
+			}
+		}
+		else
+		{
+			if (Input.GetKeyDown(KeyCode.Alpha3))
+			{
+				Debug.Log("No Ability Selected");
+			}
+		}
 	}
 
 	public void AddAbility(GameObject ability, int index)
