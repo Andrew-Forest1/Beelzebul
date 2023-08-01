@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
 	public bool canCast = true;
 	public bool menuOpen = false;
 
+	public float health = 100;
+	public float mana = 100;
+	public GameObject HealthBar;
+	HealthBar healthBar;
+
 	DisableController disable;
 	BuffController buff;
 	KeyMovement movement;
@@ -28,6 +33,8 @@ public class PlayerController : MonoBehaviour
 		movement = GetComponent<KeyMovement>();
 		attack = GetComponent<AttackController>();
 		abilities = GetComponent<AbilityController>();
+
+		healthBar = HealthBar.GetComponent<HealthBar>();
     }
 
     // Update is called once per frame
@@ -55,4 +62,10 @@ public class PlayerController : MonoBehaviour
 			}
 		}
     }
+
+	public void TakeDamage(float damage)
+	{
+		health -= damage;
+		healthBar.UpDateHealth(health);
+	}
 }

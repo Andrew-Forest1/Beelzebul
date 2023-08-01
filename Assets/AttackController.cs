@@ -6,7 +6,6 @@ public class AttackController : MonoBehaviour
 {
 	public float attackSpeed = 1;
 	bool attackOffCD = true;
-	public GameObject fireball;
 	public Animator anime;
 	public PlayerController player;
 
@@ -30,10 +29,6 @@ public class AttackController : MonoBehaviour
 		{
 			if (Input.GetMouseButton(0))
 			{
-				//GameObject fireballinstance = Instantiate(fireball, transform.position, transform.rotation);
-				//fireballinstance.transform.position = transform.position;
-				//fireballinstance.transform.rotation = transform.rotation;
-				//StartCoroutine(AttackCD());
 				anime.SetInteger("Attack", 2);
 				StartCoroutine(AttackCD());
 				player.canMove = false;

@@ -6,6 +6,7 @@ public class FireBall : MonoBehaviour
 {
 	public float speed = 10;
 	public float range = 20;
+	public float damage = 15;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,10 @@ public class FireBall : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		//if(collision.gameObject.layer != 3)
+		if(collision.gameObject.layer == 10)
+		{
+			collision.gameObject.SendMessage("TakeDamage", damage);
+		}
 		
 		Destroy(transform.gameObject);
 		

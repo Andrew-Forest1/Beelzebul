@@ -35,6 +35,6 @@ public class NPCHealthController : MonoBehaviour
 			health -= damage;
 		}
 		healthSlider.value = (float) health / (float) maxHealth;
-		healthText.text = health.ToString();
+		healthText.text = ((int)health).ToString();
 	}
 }
