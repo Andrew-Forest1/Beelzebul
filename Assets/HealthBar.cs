@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-	public int maxHealth = 100;
-	public int health = 100;
+	public float maxHealth = 100;
+	public float health = 100;
 	public Text healthText;
 	public Slider healthSlider;
 
@@ -19,25 +19,29 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.UpArrow))
-		{
-			if(health < maxHealth)
-			{
-				health += 10;
-			}
-		}
+		//if (Input.GetKeyDown(KeyCode.UpArrow))
+		//{
+		//	if(health < maxHealth)
+		//	{
+		//		health += 10;
+		//	}
+		//}
 
-		else if (Input.GetKeyDown(KeyCode.DownArrow))
-		{
-			if (health > 0)
-			{
-				health -= 10;
-			}
-		}
+		//else if (Input.GetKeyDown(KeyCode.DownArrow))
+		//{
+		//	if (health > 0)
+		//	{
+		//		health -= 10;
+		//	}
+		//}
 
-		healthSlider.value = (float) health / (float) maxHealth;
-		healthText.text = health.ToString() + " / " + maxHealth.ToString();
+
     }
 
-
+	public void UpDateHealth(float newHealth)
+	{
+		health = newHealth;
+		healthSlider.value = health / maxHealth;
+		healthText.text =  ((int)health).ToString() + " / " + ((int)maxHealth).ToString();
+	}
 }

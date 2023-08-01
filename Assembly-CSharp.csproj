@@ -53,35 +53,51 @@
     <UnityVersion>2020.3.37f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
+    <Compile Include="Assets\SwordOnHit.cs" />
+    <Compile Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
+    <Compile Include="Assets\Abilities\Scripts\FireBall.cs" />
     <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
+    <Compile Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
     <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\AbilityController.cs" />
+    <Compile Include="Assets\Abilities\Scripts\FireBallParams.cs" />
     <Compile Include="Assets\AbilityParam.cs" />
     <Compile Include="Assets\AttackController.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\AbilityBook.cs" />
+    <Compile Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\Imports\CaptainCatSparrow\SpellIconsVolume_2\Scripts\Demo.cs" />
     <Compile Include="Assets\KeyMovement.cs" />
     <Compile Include="Assets\ClassAbilities.cs" />
     <Compile Include="Assets\DisableController.cs" />
     <Compile Include="Assets\HUDController.cs" />
+    <Compile Include="Assets\NPCHealthController.cs" />
     <Compile Include="Assets\AbilitiesPageController.cs" />
     <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\ActionBarController.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
+    <Compile Include="Assets\Abilities\Scripts\ScorchedEarth.cs" />
+    <Compile Include="Assets\SwordAttack.cs" />
+    <Compile Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\CharacterController.cs" />
+    <Compile Include="Assets\ActionButtonController.cs" />
     <Compile Include="Assets\AbilityDragDrop.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Abilities\Scripts\ScorchedEarthParams.cs" />
     <Compile Include="Assets\Attributes.cs" />
+    <Compile Include="Assets\NPCController.cs" />
+    <Compile Include="Assets\NPCDetection.cs" />
+    <Compile Include="Assets\NPCAttack.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Abilities\Scripts\FlameStrikeParams.cs" />
+    <Compile Include="Assets\Abilities\Scripts\FlameStrike.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
-    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
-    <None Include="Assets\Pixel Monster Pack\notes.txt" />
-    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
+    <None Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
+    <None Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
+    <None Include="Assets\Imports\Pixel Monster Pack\notes.txt" />
+    <None Include="Assets\Imports\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

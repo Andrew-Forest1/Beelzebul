@@ -5,11 +5,12 @@ using UnityEngine;
 public class KeyMovement : MonoBehaviour
 {
 	public float speed = 5;
+	public Animator anime;
     // Start is called before the first frame update
 
     void Start()
     {
-        
+		anime = transform.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,6 +49,16 @@ public class KeyMovement : MonoBehaviour
 
 		// Rotate the object to face the mouse position
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+		if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+		{
+			anime.SetBool("Moving", true);
+		}
+		else if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+		{
+			anime.SetBool("Moving", false);
+		}
+		
 
 		if (Input.GetKey(KeyCode.W))
 		{
